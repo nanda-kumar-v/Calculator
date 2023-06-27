@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css".css">
+  </head>
+  <body>
+  
+    <div class="container">
+      <div class="bg-image">
+        <img src="./src/gradient-abstract-colorful-background_23-2149120346.avif" alt="">
+      </div>
+      <div class="calculator">
+        <input type="text" id="outputScreen" placeholder="0" readonly>
+        <div class="main">
+          <div class="row">
+            <input type="button" id="allClear" onclick="allClear()" value="AC">
+            <input type="button" id="percent" onclick="display('%')" value="%">
+            <input type="button" id="clearValue" onclick="removeclearValue()" value="C">
+            <input type="button" id="division" onclick="display('/')" value="/">
+          </div>
+
+          <div class="row">
+            <input type="button" id="seven" onclick="display('7')" value="7">
+            <input type="button" id="eight" onclick="display('8')" value="8">
+            <input type="button" id="nine" onclick="display('9')" value="9">
+            <input type="button" id="multiply" onclick="display('*')" value="X">
+          </div>
+
+          <div class="row">
+            <input type="button" id="four" onclick="display('4')" value="4">
+            <input type="button" id="five" onclick="display('5')" value="5">
+            <input type="button" id="six" onclick="display('6')" value="6">
+            <input type="button" id="substract" onclick="display('-')" value="-">  
+          </div>
+
+          <div class="row">
+            <input type="button" id="one" onclick="display('1')" value="1">
+            <input type="button" id="two" onclick="display('2')" value="2">
+            <input type="button" id="three" onclick="display('3')" value="3">
+            <input type="button" id="add" onclick="display('+')" value="+">  
+          </div>
+
+          <div class="row">
+            <input type="button" id="doubleZero" onclick="display('00')" value="00">
+            <input type="button" id="zero" onclick="display('0')" value="0" >
+            <input type="button" id="dot" onclick="display('.')" value=".">
+            <input type="button" id="equal" onclick="expEval()" value="=">
+          </div>
+
+        </div>
+      </div>
+    </div>
+<script src="calculator.js"></script>
+  </body>
+</html>
